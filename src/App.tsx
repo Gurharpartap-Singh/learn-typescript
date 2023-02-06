@@ -1,5 +1,7 @@
 import './App.css';
+import { Heading } from './components/Heading';
 import { NameList } from './components/NameList';
+import { Oscar } from './components/Oscar';
 
 function App() {
   const nameList = [
@@ -19,6 +21,11 @@ function App() {
   return (
     <div className="App">
       <NameList name={nameList}/>
+      <Oscar>
+        <Heading>
+          Hello Hello
+        </Heading>
+      </Oscar>
     </div>
   );
 }
